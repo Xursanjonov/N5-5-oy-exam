@@ -1,0 +1,127 @@
+// Slider style
+.slider-container {
+  width: 1440px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: white;
+
+  .slider {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .carusel-cart {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+// Slider style end
+
+// featured section style
+.featured {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1.4rem;
+
+  .featured__title {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    gap: 1rem;
+    .featured__titles {
+      font-size: 1.6rem;
+    }
+
+    .featured_categories-tab {
+      padding: 0.1rem 0;
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      justify-content: center;
+      gap: 1rem;
+      font-size: 14px;
+      color: rgb(87, 86, 86);
+      .featured-foods {
+        color: #3bb77e;
+      }
+    }
+  }
+  .featured__products {
+    width: 1430px;
+    display: grid;
+    margin: 0 auto;
+    padding: 1rem 0;
+    justify-content: center;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 0.4rem;
+
+    .HomeFeaturedTab {
+      width: 130px;
+      height: 160px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      border: 1px solid gray;
+    }
+  }
+
+  @media (max-width: 868px) {
+    .featured__products {
+      width: 830px;
+      margin: 0 auto;
+      padding: 1rem 0;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+      background-color: white;
+
+      .HomeFeaturedTab {
+        width: 130px;
+        height: 160px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 1px solid gray;
+      }
+    }
+  }
+  @media (max-width: 568px) {
+    .featured__products {
+      width: 530px;
+      margin: 0 auto;
+      padding: 1rem 0;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.8rem;
+      background-color: white;
+
+      .HomeFeaturedTab {
+        width: 130px;
+        height: 160px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 1px solid gray;
+      }
+    }
+  }
+}
+// featured section style end
